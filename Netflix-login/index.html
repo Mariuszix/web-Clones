@@ -12,32 +12,42 @@
   </head>
   <body>
     <header>
-      <h1 class="netflix">NETFLIX</h1>
+      <div class="logo">
+        <a href="https://netflix.com">
+          <img
+            src="https://i.ibb.co/JtNk8Ln/Netflix-2014-logo-svg.png"
+            alt="Netflix-2014-logo-svg"
+        /></a>
+      </div>
     </header>
     <div class="login-sqare">
       <h1 class="title">Sign In</h1>
       <form action="#" class="sign-form">
         <div>
           <input
-            class="imput"
+            class="input"
             type="email"
             name="email"
             placeholder="Email or phone number"
+            required
+            autocomplete="off"
           />
         </div>
         <div>
           <input
-            class="imput"
+            class="input"
             type="password"
             name="password"
             placeholder="Password"
+            required
+            autocomplete="off"
           />
         </div>
         <div><button class="button">Sign In</button></div>
 
         <div class="check-div">
-          <label class="container"
-            > <span class="remember-text"> Remember me </span>
+          <label class="container">
+            <span class="remember-text"> Remember me </span>
             <input type="checkbox" checked="checked" />
             <span class="checkmark"></span>
           </label>
@@ -48,33 +58,43 @@
             <img
               class="icon-facebook"
               src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png"
-            /> <span class="facebook-text"> Login with Facebook</span></a
+              alt="facebook icon"
+            />
+            <span class="facebook-text"> Login with Facebook</span></a
           >
-          <p>New to Netflix? <a href="#">Sign up now.</a></p>
-          <p>
-            This page is protected by Google reCAPTCHA to ensure you're not a
-            bot.
-            <a href="">Learn more.</a>
-          </p>
+          <div class="new-to-netflix">
+            <p>
+              New to Netflix?
+              <span class="sign-up-now"> <a href="#">Sign up now.</a> </span>
+            </p>
+
+            <p class="recaptcha">
+              This page is protected by Google reCAPTCHA to ensure you're not a
+              bot. <a href="#"> Learn more.</a>
+            </p>
+          </div>
         </div>
       </form>
     </div>
 
     <div>
-      <footer>
-        <div>
-          <h2>Questions? Contact us.</h2>
+      <footer class="footer">
+        <div class="questions">
+          <a id="questions" href="#"> Questions? Contact us.</a>
+        </div>
+        <div class="links-f">
           <a href="#">FAQ</a>
           <a href="#">Help Center</a>
           <a href="#">Terms of Use</a>
           <a href="#">Privacy</a>
           <a href="#">Cookie Preferences</a>
-          <a href="#">Cookie Preferences</a>
           <a href="">Corporate Information</a>
         </div>
-        <div>
+
+        <div class="language-selector">
           <select name="language" id="language-selector">
-            <option value="english">English</option>
+            
+            <option value="english" >English</option>
             <option value="romanian">Romanian</option>
             <option value="russian">Russian</option>
           </select>
